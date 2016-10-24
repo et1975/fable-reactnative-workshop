@@ -7,7 +7,7 @@ type Model =
   {count:int }
 
 let init() =
-  {count=0 }
+  failwith "TODO: implement me"
 
 // Update
 type Msg =
@@ -16,8 +16,10 @@ type Msg =
 
 let update msg model =
   match msg with
-  | Increment -> {model with count = model.count + 1}
-  | Decrement -> {model with count = model.count - 1}
+  | Increment -> 
+    failwith "TODO: implement me"
+  | Decrement -> 
+    failwith "TODO: implement me"
 
 // View
 module R = Fable.Helpers.ReactNative
@@ -25,8 +27,6 @@ module R = Fable.Helpers.ReactNative
 let view model (dispatch:Dispatch<Msg>) =
   let onClick msg =
     fun _ -> msg |> dispatch
-  R.view []
-    [ Styles.button "-" (fun _ -> dispatch Decrement)
-      R.text [] (string model.count)
-      Styles.button "+" (fun _ -> dispatch Increment) ]
+  // Hint: copy from the counter sample
+  failwith "TODO: implement me"
 
