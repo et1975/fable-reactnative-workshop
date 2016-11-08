@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "firstbuild": "npm install && fable",
+    "firstbuild": "npm install && node node_modules/fable-compiler/fable.js",
     "prebuild": "npm install",
-    "build": "fable",
-    "watch": "fable -w",
+    "build": "node node_modules/fable-compiler/fable.js",
+    "watch": "node node_modules/fable-compiler/fable.js -w",
     "start": "node node_modules/react-native/local-cli/cli.js start"
   },
   "dependencies": {
@@ -16,6 +16,7 @@
     "react-native": "0.33.0"
   },
   "devDependencies": {
+    "fable-compiler": "^0.6.15",
     "fable-import-react": "^0.5.0",
     "fable-import-react-native": "^0.11.0",
     "fable-import-fetch": "^0.1.7",
