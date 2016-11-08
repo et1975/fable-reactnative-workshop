@@ -8,8 +8,11 @@ The samples do not have the native infrastructure checked in. Do not be alarmed,
 
 ## Using the cli example:
 > react-native init workshop
+
 > cp -r workshop/ios counter
+
 or
+
 > cp -r workshop/android counter
 
 Important:
@@ -18,8 +21,12 @@ Make sure the package.json `id` matches the react-native's project name. This sh
 
 ## Order of samples to do:
 1) counter - basic app
+
 2) container - parent/child composition
+
 3) storage - working with local storage
+
 4) webrequest - calling a web api
+
 5) subscription - feeding a timer into the state updates
 
